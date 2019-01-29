@@ -10,19 +10,31 @@ namespace Arrays
             Console.WriteLine("Welcome to the array program. The program will now list each element value in the array.");
             Console.WriteLine("");
 
-            // Create an array with 25 elements.
-            int[] array1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 };
-
-            // Display each element in the array.
-            foreach (int i in array1)
+            // Try block just in case, for good practice.
+            try
             {
-                Console.WriteLine("Element Value = " + i);
-            }
+                // Create an array with 25 elements.
+                int[] array1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 };
 
-            // Closing message and instructions.
+                // Display each element in the array.
+                foreach (int i in array1)
+                {
+                    Console.WriteLine("Element Value = " + i);
+                }
+
+                // Closing message and instructions.
                 Console.WriteLine("");
                 Console.WriteLine("Press any key to close the program...");
-                Console.ReadKey(true);            
+                Console.ReadKey(true);
+            }
+            // Catch block just in case.
+            catch
+            {
+                // Closing message and instructions.
+                Console.WriteLine("");
+                Console.WriteLine("Press any key to close the program...");
+                Console.ReadKey(true);
+            }          
         }
     }
 }
