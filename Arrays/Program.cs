@@ -6,7 +6,7 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            // Introduction message. No user input necessary.
+            // Introduction message, no user input necessary.
             Console.WriteLine("Welcome to the array program. The program will now list each element value in the array.");
             Console.WriteLine("");
 
